@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>النظام الشمسي</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-50 font-sans leading-normal tracking-normal">
+
+    
+    <header class="bg-gray-900 p-6 text-white text-center">
+        <h1 class="text-3xl font-bold">النظام الشمسي</h1>
+        <p class="mt-2 text-lg">اكتشف كواكب النظام الشمسي</p>
+    </header>
+
+    
+    <main class="p-6">
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">مقدمة عن النظام الشمسي</h2>
+            <p class="text-lg text-gray-700 leading-loose">
+                النظام الشمسي هو النظام الذي يتكون من الشمس وكل ما يدور حولها من كواكب، أقمار، كويكبات، ومذنبات. يقع النظام الشمسي في مجرة درب التبانة.
+            </p>
+            
+            <a href="more-info.html" class="mt-4 inline-block bg-indigo-700 text-white py-2 px-4 rounded hover:bg-indigo-800 transition duration-300">
+                لمعرفة المزيد
+            </a>
+        </section>
+        
+
+        
+        <section>
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">الكواكب</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+               
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">عطارد</h3>
+                    <p class="text-gray-600">أقرب كوكب إلى الشمس وهو الأصغر في النظام الشمسي.</p>
+                    <button id="videoButton" class="mt-4 bg-indigo-700 text-white py-2 px-4 rounded hover:bg-indigo-800 transition duration-300">
+                        إنقر لمشاهدة فيديو
+                    </button>
+                </div>
+                <div id="videoModal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+                    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+                        
+                        <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                            <div class="bg-white p-6">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">فيديو عن عطارد</h3>
+                                <div class="mt-4">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=rqNxqj94pus&ab_channel=%D8%AA%D8%A3%D9%85%D9%84%D8%A7%D8%AA%D9%83%D9%88%D9%86%D9%8A%D8%A9" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                                <button id="closeButton" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:w-auto sm:text-sm">إغلاق</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+    
+   
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">الزهرة</h3>
+                    <p class="text-gray-600">الكوكب الثاني وهو الأكثر حرارة بسبب غلافه الجوي الكثيف.</p>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">الأرض</h3>
+                    <p class="text-gray-600">الكوكب الذي نعيش عليه، وهو الثالث في الترتيب من الشمس.</p>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">المريخ</h3>
+                    <p class="text-gray-600">الكوكب الرابع المعروف بلونه الأحمر.</p>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">المشتري</h3>
+                    <p class="text-gray-600">أكبر كوكب في النظام الشمسي وله أكثر من 70 قمرًا.</p>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">زحل</h3>
+                    <p class="text-gray-600">معروف بحلقاته الجميلة وهو الكوكب السادس من الشمس.</p>
+                </div>
+
+               
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">أورانوس</h3>
+                    <p class="text-gray-600">الكوكب السابع ويمتاز بميله الشديد.</p>
+                </div>
+
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">نبتون</h3>
+                    <p class="text-gray-600">الكوكب الثامن والأبعد عن الشمس.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="bg-gray-900 p-4 text-white text-center mt-8">
+        <p>&copy; 2024 النظام الشمسي - جميع الحقوق محفوظة.</p>
+    </footer>
+
+
+
+
+    <script>   
+        const modal = document.getElementById('videoModal');
+        const openButton = document.getElementById('videoButton');
+        const closeButton = document.getElementById('closeButton');
+
+
+        openButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+// Close modal when close button is clicked
+        closeButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+    </script>
+ 
+
+</body>
+</html>
